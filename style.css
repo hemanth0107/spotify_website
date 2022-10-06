@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+ *{
+ margin: 0;
+padding: 0;
+} 
+nav ul li{
+    padding: 0 12px;
+}
+nav ul{
+display: flex;
+background-color: black;
+color:white;
+list-style-type: none;
+height: 65px;
+align-items: center;
+
+}
+.logo1 img{
+    width: 44px;
+    padding: 0 8px;
+   
+}
+
+.logo1
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    width: 70%;
+    display: flex;
+    margin: 23px auto;
+/* auto is used to split equal space on left and right */
+    padding: 34px;
+    border-radius: 12px;
+    background-image: url("bg.jpg");    
+
+
+}
+.bottom{
+ position: sticky;/* it makes the content to stick even if we scrool also */
+background-color: black;
+height: 130px;
+bottom: 0;
+flex-direction: column;
+/* it vil make our buttons to get below the progress bar */
+
+color: white;
+/* it vil make the contents or stickers or text visible in that color otherwise we cant identify in background; */
+display: flex;  
+/* it vil make the direction of content displaying horizontal */
+align-items: center;
+/* it vil make only the text to get into center */
+/* flex-direction: column; */
+justify-content: center;
+/* it vil make the scrool bar which is not a text , like any stickers etc to center */
+
+}
+.icons{
+    margin-top: 14px;
+    
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 75px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 34px;
+}
+.songItem img{
+    width: 45px;
+    margin: 0px 23px;
+    border-radius: 35px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+height: 15px;
+opacity: 0;
+transition: opacity 0.4s ease-in;
+/* it is used to change the properity very smoothly effects etc */
+/* ease is a trick initally it vil be slow later it vil be fast */
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
